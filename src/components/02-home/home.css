@@ -1,0 +1,298 @@
+.home-container {
+  width: 90%;
+  height: 100vh;
+  padding: 20rem 0 30rem 0;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6rem;
+}
+
+.home-top-query {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+
+.home-img {
+  border: 1.5rem solid #edd11a9a;
+  width: 35rem;
+  border-radius: 50%;
+  animation: profile-animate 6s ease-in-out infinite 1s;
+}
+
+@keyframes profile-animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* social */
+.home-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-social-icon {
+  font-size: 4rem;
+  color: #555;
+  transition: 0.2s;
+}
+
+.home-social-icon:hover {
+  color: #dcc31d;
+}
+
+/* data */
+.home-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 50%;
+}
+
+.home-title {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.home-subtitle::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1.5px;
+  background-color: #999;
+  left: 0;
+  top: 1.8rem;
+}
+
+.home-subtitle {
+  position: relative;
+  padding-left: 8rem;
+  font-size: 2.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.home-description {
+  font-size: 1.8rem;
+  color: #666;
+  max-width: 550px;
+  font-weight: 500;
+}
+
+.wave-hand {
+  color: #dcc31d;
+  font-size: 6rem;
+  align-self: center;
+}
+
+.home-button {
+  background-color: #3a3a3a;
+  color: whitesmoke;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.home-button:hover {
+  background-color: #dcc31d;
+}
+
+.home-button i {
+  font-size: 2rem;
+  color: whitesmoke;
+  /* transform: rotate(-40deg); */
+  font-weight: 300;
+}
+
+/* scroll */
+
+.home-scrollDown {
+  width: 3rem;
+  height: 5rem;
+  border: 0.3rem solid #666;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+/* .home-scrollDown::before, */
+.home-scrollDown::after {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 50%;
+  border: 0.3rem solid #edd11a;
+  height: 0.5rem;
+  width: 0.5rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scrollDown 1s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+.home-scrollDown-name {
+  position: absolute;
+  content: "";
+  bottom: 10%;
+  left: 50.8%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .home-top-query {
+    width: 70%;
+  }
+
+  .home-img {
+    width: 60%;
+  }
+} /**************************/
+/* BELOW 800px (Smaller tablets) */
+/**************************/
+@media (max-width: 50em) {
+  .home-container {
+    height: 100vh;
+    padding: 2rem 0 15rem 0;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .home-top-query {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .home-img {
+    width: 38rem;
+  }
+
+  .home-data {
+    max-width: 80%;
+  }
+  .home-subtitle::before {
+    width: 50px;
+  }
+}
+@media (max-width: 850px) {
+  .home-scrollDown {
+    display: none;
+  }
+
+  .home-scrollDown-name {
+    display: none;
+  }
+}
+
+@media (max-width: 34em) {
+  #home {
+    padding: 0;
+  }
+
+  .home-container {
+    height: 100vh;
+    padding: 5rem 0 10rem 0;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-subtitle {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1.6rem;
+  }
+
+  .home-img {
+    width: 40%;
+    border: 1.1rem solid #edd11a9a;
+  }
+
+  .home-top-query {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-subtitle::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 1.5px;
+    background-color: #999;
+    left: 0;
+    top: 1.45rem;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .home-data {
+    max-width: 90%;
+  }
+
+  .home-scrollDown {
+    display: none;
+  }
+
+  .home-scrollDown-name {
+    display: none;
+  }
+}

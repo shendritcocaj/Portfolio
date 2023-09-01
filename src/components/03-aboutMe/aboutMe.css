@@ -1,0 +1,149 @@
+#about {
+  padding-top: 0px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.about-top-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 80%;
+}
+
+.about-title {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: #444;
+}
+
+.about-description {
+  font-size: 1.8rem;
+  color: #666;
+  max-width: 800px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  width: 80%;
+}
+
+.about-know-me-title,
+.about-skills-title {
+  font-size: 2.5rem;
+  color: #555;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.about-know-me-description,
+.about-know-me-description-one {
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.about-know-me-description-one {
+  padding-bottom: 2rem;
+}
+
+.about-my-skills-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-my-skills-item,
+.about-cv {
+  padding: 1.5rem 2.2rem;
+  border-radius: 15px;
+  width: fit-content;
+  border: 4px solid #999;
+  font-size: 1.6rem;
+  transition: 0.2s;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about-cv {
+  padding: 1.8rem 2.2rem;
+  border: none;
+  background-color: #3a3a3a;
+  color: whitesmoke;
+}
+.about-cv:hover {
+  background-color: #dcc31d;
+}
+
+.about-my-skills-item:hover {
+  background-color: #edd11a;
+  border: 4px solid #edd11a;
+}
+
+.skills-row-1,
+.skills-row-2,
+.skills-row-3 {
+  display: flex;
+  gap: 2rem;
+}
+
+.uil-file {
+  font-size: 2rem;
+}
+
+.about-cv {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 50em) {
+  .about-bottom-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 8rem;
+    width: 80%;
+  }
+
+  .about-know-me-title,
+  .about-skills-title {
+    text-align: center;
+  }
+
+  .about-know-me div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-my-skills-items {
+    display: block;
+  }
+
+  .skills-row-1,
+  .skills-row-2,
+  .skills-row-3 {
+    display: block;
+  }
+
+  .about-my-skills-item {
+    width: 100%;
+    margin: 2rem auto;
+  }
+}
